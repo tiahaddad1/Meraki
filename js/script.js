@@ -40,7 +40,7 @@ const timeFunction = setInterval(() => {
     }
   }
 
-  if (dayValue === 53 && hourValue === 13) {
+  if (dayValue === 0 && hourValue === 0 && secValue===0 && minValue===0) {
     // if (dayValue === 0 && hourValue === 0){
     clearInterval(timeFunction);
     popupContainer.style.display = "block";
@@ -51,44 +51,7 @@ const timeFunction = setInterval(() => {
   days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
 }, 1000); //1000ms = 1s
 
-// const emailInput = document.getElementById("emailInput");
-// const notifyButton = document.getElementById("notifyButton");
-
-// notifyButton.addEventListener("click", function () {
-//   const email = emailInput.value;
-
-//   if (!email) {
-//     alert("Please enter your email address to subscribe!");
-//   } else {
-//     console.log("User email:", email);
-//     Email.send({
-//         SecureToken : " cd759e75-8180-4c9e-9671-f1df62ebc375",
-//       // Host: "smtp.gmail.com",
-//       // Username: "tiah06971@gmail.com",
-//       // Password: "socykjuhdfsuxciy",
-//       To: "tiah06971@gmail.com",
-//       From: email,
-//       Subject: "New User Joined 💪",
-//       Body: "User's email address: "+email,
-//     }).then((message) => {
-//       console.log("success")
-//       console.log(message)
-//       alert(message)});
-//     // emailInput.value = "";
-//   }
-// });
 
 closePopupButton.addEventListener("click", function () {
   popupContainer.style.display = "none";
 });
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      video.addEventListener("click", function () {
-        if (video.paused) {
-          video.play();
-        } else {
-          video.paused();
-        }
-      });
-    }
