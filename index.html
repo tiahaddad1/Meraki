@@ -11,13 +11,11 @@
   <body>
     <section class="container">
       <video autoplay muted loop id="myVideo">
-        <source src="video2.mp4" type="video/mp4">
+        <source src="video6.mp4" type="video/mp4" />
       </video>
-      
-      <div class="logoArea"><img src="logoFinal.png" class="logo"/></div>
-        <p class="slogan">
-          Unleash your inner power
-        </p>
+
+      <div class="logoArea"><img src="logoFinal.png" class="logo" /></div>
+      <p class="slogan">Unleash your inner power</p>
       <div class="time-content">
         <div class="time days">
           <span class="number"></span>
@@ -40,12 +38,30 @@
       <div class="email-content">
         <p>Subscribe now to get the latest updates!</p>
 
-        <div class="input-box">
-          <input type="email" placeholder="Enter your email" />
-          <button>Notify Me</button>
+        <form method="post" action="https://formsubmit.co/tiah06971@gmail.com">
+          <div class="input-box">
+            <input
+              id="emailInput"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button id="notifyButton" type="submit">Notify Me</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="popupContainer">
+        <div id="popupContent">
+          <p>Meraki is NOW live</p>
+          <h4>You can still add your email below to get the latest news 💪</h4>
+          <button id="closePopup">Close</button>
         </div>
       </div>
     </section>
+    
     <script src="js/script.js"></script>
+
   </body>
 </html>
