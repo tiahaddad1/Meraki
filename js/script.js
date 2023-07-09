@@ -88,7 +88,7 @@ var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (video.paused) {
           video.play();
         } else {
-          video.play();
+          video.paused();
         }
       });
     }
