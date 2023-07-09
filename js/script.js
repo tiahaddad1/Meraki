@@ -81,3 +81,14 @@ const timeFunction = setInterval(() => {
 closePopupButton.addEventListener("click", function () {
   popupContainer.style.display = "none";
 });
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      video.addEventListener("click", function () {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.play();
+        }
+      });
+    }
